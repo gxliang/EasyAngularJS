@@ -1,0 +1,414 @@
+  <!-- Navbar
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="navbar">导航条</h1>
+    </div>
+
+    <h2 id="navbar-default">默认的导航条</h2>
+    <p>导航条是在您的应用或网站中作为导航标头的响应式元组件。它们在移动设备上可以折叠（并且可开可关），且在可用的视口宽度增加时变为水平展开模式。</p>
+
+    <div class="bs-callout bs-callout-info">
+      <h4>定制折叠模式与水平模式的阈值</h4>
+      <p>根据你所放在导航条上的内容的长度，也许你需要调整导航条进入折叠模式和水平模式的阈值。通过改变<code>@grid-float-breakpoint</code>变量的值或加入您自己的媒体查询CSS代码均可实现你的需求。</p>
+    </div>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Requires JavaScript</h4>
+      <p>If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse</code>.</p>
+    </div>
+
+    <div class="bs-example">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;form class=&quot;navbar-form navbar-left&quot; role=&quot;search&quot;&gt;
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+      &lt;/div&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/nav&gt;</code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>插件依赖</h4>
+      <p>这个响应式导航栏需要你当前版本的Bootstrap的<a href="../javascript/#collapse">collapse插件</a></p>
+    </div>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>增强导航条的可访问性</h4>
+      <p>要增强可访问性，一定要给每个导航条加上<code>role="navigation"</code>。</p>
+    </div>
+
+
+    <h2 id="navbar-forms">表单</h2>
+    <p>将表单放置于<code>.navbar-form</code>之内可以呈现很好的垂直对齐，并在较窄的viewport中呈现折叠状态。使用对齐选项可以确定其在导航条上出现的位置。</p>
+    <p>通过使用mixin，<code>.navbar-form</code>和 <code>.form-inline</code>共享了很多代码。</p>
+    <div class="bs-example">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;form class=&quot;navbar-form navbar-left&quot; role=&quot;search&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>为输入框添加label标签</h4>
+      <p>如果你没有为输入框添加label标签，屏幕阅读器将会遇到问题。对于导航条内的表单，可以通过<code>.sr-only</code> class隐藏label标签。</p>
+    </div>
+
+
+    <h2 id="navbar-buttons">按钮</h2>
+    <p>对于不包含在<code>&lt;form&gt;</code>中的<code>&lt;button&gt;</code>元素，加上<code>.navbar-btn</code>这个class后可以让它在导航条里垂直居中。</p>
+    <div class="bs-example">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+          <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+        </div>
+      </nav>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default navbar-btn&quot;&gt;Sign in&lt;/button&gt;</code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>Context-specific usage</h4>
+      <p>Like the standard <a href="../css#buttons">button classes</a>, <code>.navbar-btn</code> can be used on <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements. However, neither <code>.navbar-btn</code> nor the standard button classes should be used on <code>&lt;a&gt;</code> elements within <code>.navbar-nav</code>.</p>
+    </div>
+
+    <h2 id="navbar-text">文本</h2>
+    <p>把文本包裹在<code>.navbar-text</code>中时，为了有正确的行距和颜色，通常使用<code>&lt;p&gt;</code>标签。</p>
+    <div class="bs-example">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+          <p class="navbar-text">Signed in as Mark Otto</p>
+        </div>
+      </nav>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;p class=&quot;navbar-text&quot;&gt;Signed in as Mark Otto&lt;/p&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="navbar-links">非导航的链接</h2>
+    <p>或许你希望在标准的导航组件之外添加标准链接，那么，使用<code>.navbar-link</code> class可以让链接有正确的默认颜色和反色。</p>
+    <div class="bs-example">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+          <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+        </div>
+      </nav>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;p class=&quot;navbar-text navbar-right&quot;&gt;Signed in as &lt;a href=&quot;#&quot; class=&quot;navbar-link&quot;&gt;Mark Otto&lt;/a&gt;&lt;/p&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="navbar-component-alignment">组件对齐</h2>
+    <p>用<code>.navbar-left</code>或者<code>.navbar-right</code>工具类给导航链接、表单、按钮或文本对齐。两种类都用到在特定方向的CSS浮动样式。例如，要对齐导航链接，就要把它们放在个分开的、应用了工具类的<code>&lt;ul&gt;</code>里。</p>
+    <p>这些class是<code>.pull-left</code>和<code>.pull-right</code>的mixin版本，但是他们被限定在了媒体查询中，这样可以更容易的在各种尺寸的屏幕上处理导航条组件。</p>
+
+
+    <h2 id="navbar-fixed-top">固定在顶部</h2>
+    <p>添加<code>.navbar-fixed-top</code>可以让导航条固定在顶部。</p>
+    <div class="bs-example bs-navbar-top-example">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-default navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+  ...
+&lt;/nav&gt;</code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>需要为body标签设置内补（padding）</h4>
+      <p>这个固定的导航条会遮住页面上的其它内容，除非你给<code>&lt;body&gt;</code>的上方设置了<code>padding</code>。用你自己的值，或用下面给出的代码都可以。提示：导航条的默认高度是50px。</p>
+<div class="highlight">
+<pre><code class="language-css"><span class="tag">body</span> <span class="rules">{ <span class="rule"><span class="attribute">padding-top</span>:<span class="value"> <span class="number">70</span>px;</span></span> <span class="rule">}</span></span></code></pre>
+
+</div>
+      <p>一定要放在Bootstrap CSS的核心文件<strong>之后</strong>。</p>
+    </div>
+
+
+    <h2 id="navbar-fixed-bottom">固定在底部</h2>
+    <p>用<code>.navbar-fixed-bottom</code>代替。</p>
+    <div class="bs-example bs-navbar-bottom-example">
+      <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-default navbar-fixed-bottom&quot; role=&quot;navigation&quot;&gt;
+  ...
+&lt;/nav&gt;</code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>需要为body标签设置内部（padding）</h4>
+      <p>这个固定的导航条会遮住页面上的其它内容，除非你给<code>&lt;body&gt;</code>底部设置了<code>padding</code>。用你自己的值，或用下面给出的代码都可以。提示：导航条的默认高度是50px。</p>
+<div class="highlight">
+<pre><code class="language-css"><span class="tag">body</span> <span class="rules">{ <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"> <span class="number">70</span>px;</span></span> <span class="rule">}</span></span></code></pre>
+
+</div>
+      <p>一定要在加载Bootstrap CSS的核心<strong>后</strong>使用它。</p>
+    </div>
+
+
+    <h2 id="navbar-static-top">静止在顶部</h2>
+      <p>通过添加<code>.navbar-static-top</code>即可创建一个与页面的导航条。它会随着页面向下滚动而消失。和<code>.navbar-fixed-*</code>类不同的是，你不用给<code>body</code>添加padding。</p>
+    <div class="bs-example bs-navbar-top-example">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-default navbar-static-top&quot; role=&quot;navigation&quot;&gt;
+  ...
+&lt;/nav&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="navbar-inverted">反色的导航条</h2>
+    <p>通过添加<code>.navbar-inverse</code>类可以改变导航条的外观。</p>
+    <div class="bs-example">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;nav class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+  ...
+&lt;/nav&gt;</code></pre>
+
+</div>
+
+  </div>
+
+
+

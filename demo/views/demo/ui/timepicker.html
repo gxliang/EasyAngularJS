@@ -1,0 +1,16 @@
+<div ng-controller="timepickerCtrl">
+  <div ng-model="mytime" ng-change="changed()" class="well well-small" style="display:inline-block;">
+    <timepicker hour-step="hstep" minute-step="mstep" show-meridian="ismeridian" meridians="['上午', '下午']"></timepicker>
+  </div>
+
+  <pre>Time is: {{mytime | date:'shortTime' }}</pre>
+
+  <div>Hours step is: 
+  	<select class="form-control input-sm" ng-model="hstep" ng-options="opt for opt in options.hstep">
+  	</select></div>
+  <div>Minutes step is: <select class="form-control input-sm" ng-model="mstep" ng-options="opt for opt in options.mstep"></select></div>
+
+  <button class="btn btn-sm btn-default" ng-click="toggleMode()">12H / 24H</button>
+  <button class="btn btn-sm btn-default" ng-click="update()">Set to 14:00</button>
+  <button class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+</div>

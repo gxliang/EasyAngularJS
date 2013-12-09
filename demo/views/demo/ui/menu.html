@@ -1,0 +1,11 @@
+<div class="dropdown" ng-controller="menuCtrl">
+  <button class="btn btn-info" dropdown-toggle>
+    下拉菜单<span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li ng-repeat="choice in items">
+      <a href="#">{{choice.title}}</a>
+    </li>
+  </ul>
+</div>
+

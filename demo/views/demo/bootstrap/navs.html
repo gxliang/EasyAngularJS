@@ -1,0 +1,192 @@
+  <!-- Navs
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="nav">导航</h1>
+    </div>
+
+    <p class="lead">Bootstrap中可用的导航有相似的标记，用基类<code>.nav</code>开头，这是相似的部分。改变修饰类可以改变样式。</p>
+
+    <h2 id="nav-tabs">标签页</h2>
+    <p>注意<code>.nav-tabs</code>类需要<code>.nav</code>基类。</p>
+    <div class="bs-example">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+</div>
+    <div class="bs-callout bs-callout-info">
+      <h4>Requires JavaScript tabs plugin</h4>
+      <p>For tabs with tabbable areas, you must use the <a href="../javascript/#tabs">tabs JavaScript plugin</a>.</p>
+    </div>
+    <h2 id="nav-pills">胶囊式标签页</h2>
+    <p>用相同的 HTML 标记，但要用<code>.nav-pills</code>代替。</p>
+    <div class="bs-example">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-pills&quot;&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+</div>
+    <p>Pills 可以竖直堆叠。只要加上<code>.nav-stacked</code>。</p>
+    <div class="bs-example">
+      <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="nav-justified">两端对齐的导航</h2>
+    <p>在大于768px的屏幕上，通过<code>.nav-justified</code>可以很容易的让标签页或胶囊式标签呈现出同等宽度。在小屏幕上，导航链接呈现堆叠样式。</p>
+    <div class="bs-callout bs-callout-warning">
+      <h4>Safari 和响应式两端对齐导航</h4>
+      <p>Safari有一个bug：对于两端对齐的导航，水平改变浏览器大小将引起绘制错误。此bug可以在<a href="../examples/justified-nav/">justified nav example</a>页面得到重现。</p>
+    </div>
+    <div class="bs-example">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs nav-justified&quot;&gt;
+  ...
+&lt;/ul&gt;
+&lt;ul class=&quot;nav nav-pills nav-justified&quot;&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="nav-disabled-links">禁用的链接</h2>
+    <p>对任何导航（包括标签页，pills，或列表，加入<code>.disabled</code>使<strong>链接为灰色且没有鼠标悬停效果</strong>。</p>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>链接功能没有受到影响</h4>
+      <p>这个类只改变<code>&lt;a&gt;</code>的外观，而不是它的功能。用自定义的 JavaScript 禁用这里的链接。</p>
+    </div>
+
+    <div class="bs-example">
+      <ul class="nav nav-pills">
+        <li><a href="#">Clickable link</a></li>
+        <li><a href="#">Clickable link</a></li>
+        <li class="disabled"><a href="#">Disabled link</a></li>
+      </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-pills&quot;&gt;
+  ...
+  &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="nav-dropdowns">使用下拉菜单</h2>
+    <p>用一点点额外HTML和 <a href="../javascript/#dropdowns">JavaScript下拉菜单插件</a> 加入下拉菜单。</p>
+
+    <h3>带下拉菜单的导航</h3>
+    <div class="bs-example">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Help</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        Dropdown <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </li>
+  </ul>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+  ...
+  &lt;li class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
+      Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+    <h3>带下拉菜单的胶囊式标签页</h3>
+    <div class="bs-example">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Help</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Dropdown <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-pills&quot;&gt;
+  ...
+  &lt;li class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
+      Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+  </div>

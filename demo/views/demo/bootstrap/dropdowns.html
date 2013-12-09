@@ -1,0 +1,105 @@
+ <!-- Dropdowns
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="dropdowns">下拉菜单</h1>
+    </div>
+    <p class="lead">用于显示链接列表的可切换、有上下文的菜单。</p>
+
+    <h3 id="dropdowns-example">案例</h3>
+    <p>将下拉菜单触发器和下拉菜单都包裹在<code>.dropdown</code>里，或者另一个声明了<code>position: relative;</code>的元素。然后添加组成菜单的HTML代码。</p>
+    <div class="bs-example">
+      <div class="dropdown clearfix">
+        <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn dropdown-toggle sr-only&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot;&gt;
+    Dropdown
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+    <h3 id="dropdowns-alignment">对齐选项</h3>
+    <p>给下拉菜单<code>.dropdown-menu</code>加上<code>.pull-right</code> 使文字右对齐。</p>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;dropdown-menu pull-right&quot; role=&quot;menu&quot; aria-labelledby=&quot;dLabel&quot;&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+    <h3 id="dropdowns-headers">标题</h3>
+    <p>在任何下拉菜单中均可通过添加标题来标明一组动作。</p>
+    <div class="bs-example">
+      <div class="dropdown clearfix">
+        <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu2" data-toggle="dropdown">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+          <li role="presentation" class="dropdown-header">Dropdown header</li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation" class="dropdown-header">Dropdown header</li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu2&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+  ...
+  &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+
+    <h3 id="dropdowns-disabled">禁用的菜单项</h3>
+    <p>给下拉菜单中的<code>&lt;li&gt;</code>加上<code>.disabled</code>禁用链接。</p>
+    <div class="bs-example">
+      <div class="dropdown clearfix">
+        <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu3" data-toggle="dropdown">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
+          <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+        </ul>
+      </div>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu3&quot;&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Regular link&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;disabled&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+</div>
+  </div>

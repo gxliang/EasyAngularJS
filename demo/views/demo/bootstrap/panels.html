@@ -1,0 +1,290 @@
+  <!-- Panels
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="panels">面版</h1>
+    </div>
+    <p class="lead">虽然不总是必须，但是某些时候你可能需要将某些内容放到一个盒子里。对于这种情况，可以试试面板组件。</p>
+
+    <h3 id="panels-basic">基本案例</h3>
+    <p>默认的<code>.panel</code>所做的只是提供基本的边界和内部，来包含内容。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Basic panel example
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Basic panel example
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+    <h3 id="panels-heading">带标题的面版</h3>
+    <p>用<code>.panel-heading</code>可以简单地加入一个标题容器。您也可以用<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>和<code>.panel-title</code>类加入预定义样式的标题。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading without title&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;
+    &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+    <h3 id="panels-footer">带脚注的面版</h3>
+    <p>把按钮或次要的文本放入<code>.panel-footer</code>。注意面版的脚注<strong>不会</strong>从带意义的替换中继承颜色，因为它不是在前面的内容。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Panel content
+        </div>
+        <div class="panel-footer">Panel footer</div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-footer&quot;&gt;Panel footer&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+<h3 id="panels-alternatives">有意义的替换</h3>
+    <p>像其它组件一样，可以简单地通过加入有意义的状态类，给特定的内容使用更有意义的面版。</p>
+    <div class="bs-example">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel panel-primary&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;panel panel-success&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;panel panel-info&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;panel panel-warning&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;panel panel-danger&quot;&gt;...&lt;/div&gt;</code></pre>
+
+</div>
+
+    <h3 id="panels-tables">带表格的面版</h3>
+    <p>为了无缝的设计，在面版中加入<code>.table</code>。如果有<code>.panel-body</code>，就在表格的上方加上一个用于分割的边界。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Table --&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+    <p>如果没有<code>.panel-body</code>，面版标题会和表格连接起来，没有空隙。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
+
+  &lt;!-- Table --&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+
+
+    <h3 id="panels-list-group">带列表组的面版</h3>
+    <p>可以简单地在任何面版中使用最大宽度的<a href="#list-group">列表组</a>。</p>
+    <div class="bs-example">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+          <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;!-- List group --&gt;
+  &lt;ul class=&quot;list-group&quot;&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+  </div>

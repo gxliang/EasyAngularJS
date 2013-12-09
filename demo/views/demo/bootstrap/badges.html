@@ -1,0 +1,68 @@
+  <!-- Badges
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="badges">徽章</h1>
+    </div>
+    <p class="lead">给链接，Bootstrap导航等等加入<code>&lt;span class="badge"&gt;</code>，可以容易地高亮新的或未读的条目。</p>
+
+    <div class="bs-example">
+      <a href="#">Inbox <span class="badge">42</span></a>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;</code></pre>
+
+</div>
+
+    <h4>自动消失（self colapsing）</h4>
+    <p>当没有新的或未读的条目时，里面没有内容的徽章会消失（通过CSS的<code>:empty</code>选择器实现）。</p>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>跨浏览器兼容性</h4>
+      <p>徽章在Internet Explorer 8中不会自动消失，因为它需要对<code>:empty</code>选择器的支持。</p>
+    </div>
+
+    <h4>适应导航的激活状态</h4>
+    <p>在胶囊式导航和列表式导航中的徽章有内置的样式。</p>
+    <div class="bs-example">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages <span class="badge">3</span></a></li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+        <li class="active">
+          <a href="#">
+            <span class="badge pull-right">42</span>
+            Home
+          </a>
+        </li>
+        <li><a href="#">Profile</a></li>
+        <li>
+          <a href="#">
+            <span class="badge pull-right">3</span>
+            Messages
+          </a>
+        </li>
+      </ul>
+      <br>
+      <button class="btn btn-primary" type="button">
+        Messages <span class="badge">4</span>
+      </button>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;
+  &lt;li class=&quot;active&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;span class=&quot;badge pull-right&quot;&gt;42&lt;/span&gt;
+      Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  ...
+&lt;/ul&gt;</code></pre>
+
+</div>
+  </div>
+
+

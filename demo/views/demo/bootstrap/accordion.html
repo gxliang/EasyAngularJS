@@ -1,0 +1,231 @@
+  <!-- Collapse
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="collapse">折叠 <small>collapse.js</small></h1>
+    </div>
+
+    <h3>关于</h3>
+    <p>对为支持折叠功能的组件，例如accordions和导航，赋予基本样式和灵活的支持。</p>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>插件依赖</h4>
+      <p>折叠插件依赖<a href="#transitions">过渡效果插件</a>。</p>
+    </div>
+
+    <h2 id="collapse-examples">案例</h2>
+    <p>使用折叠插件，通过扩展panel组件从而构建了一个简单的accordion组件。</p>
+
+    <div class="bs-example">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Collapsible Group Item #1
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Collapsible Group Item #2
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                Collapsible Group Item #3
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /example -->
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a data-toggle=&quot;collapse&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+
+    <p>You can also use the plugin without the accordion markup. Make a button toggle the expanding and collapsing of another element.</p>
+<div class="highlight">
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#demo&quot;&gt;
+  simple collapsible
+&lt;/button&gt;
+
+&lt;div id=&quot;demo&quot; class=&quot;collapse in&quot;&gt;...&lt;/div&gt;</code></pre>
+
+</div>
+
+
+    <h2 id="collapse-usage">用法</h2>
+    <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+    <ul>
+      <li><code>.collapse</code> hides the content</li>
+      <li><code>.collapse.in</code> shows the content</li>
+      <li><code>.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+    </ul>
+    <p>These classes can be found in <code>component-animations.less</code>.</p>
+
+    <h3>通过data属性</h3>
+    <p>仅仅通过向页面元素添加<code>data-toggle="collapse"</code> 和<code>data-target</code>就可以为其赋予控制可折叠页面元素的能力。<code>data-target</code>属性接受一个CSS选择器作为其控制对象。请确保为可折叠页面元素添加<code>collapse</code> class。如果你希望可折叠页面元素的默认状态是展开的，请添加<code>in</code> class。</p>
+    <p>为了给一组可折叠页面元素添加控制器，添加<code>data-parent="#selector"</code>即可。请参考下面给出的案例。</p>
+
+    <h3>通过JavaScript</h3>
+    <p>手动触发：</p>
+<div class="highlight">
+<pre><code class="language-js">$(<span class="string">".collapse"</span>).collapse()</code></pre>
+
+</div>
+
+    <h3>选项</h3>
+    <p>可以将选项通过data属性或JavaScript传递。对于data属性，需要将选项名称放到<code>data-</code>之后，例如<code>data-parent=""</code>。</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+         <tr>
+           <th style="width: 100px;">名称</th>
+           <th style="width: 50px;">类型</th>
+           <th style="width: 50px;">默认值</th>
+           <th>描述</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <td>parent</td>
+           <td>selector</td>
+           <td>false</td>
+           <td>If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this dependent on the <code>accordion-group</code> class)</td>
+         </tr>
+         <tr>
+           <td>toggle</td>
+           <td>boolean</td>
+           <td>true</td>
+           <td>Toggles the collapsible element on invocation</td>
+         </tr>
+        </tbody>
+      </table>
+    </div><!-- /.table-responsive -->
+
+    <h3>方法</h3>
+
+    <h4>.collapse(options)</h4>
+    <p>赋予页面元素可折叠功能。接受一个可选的<code>object</code>作为参数。
+<div class="highlight">
+<pre><code class="language-js">$(<span class="string">'#myCollapsible'</span>).collapse({
+  toggle: <span class="literal">false</span>
+})</code></pre>
+
+</div>
+
+    <h4>.collapse('toggle')</h4>
+    <p>展示或隐藏一个可折叠的页面元素。</p>
+
+    <h4>.collapse('show')</h4>
+    <p>展示一个可折叠页面元素。</p>
+
+    <h4>.collapse('hide')</h4>
+    <p>隐藏一个可折叠页面元素。</p>
+
+    <h3>事件</h3>
+    <p>Bootstrap中的折叠插件对外暴露了一组可以监听的事件。</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+         <tr>
+           <th style="width: 150px;">事件类型</th>
+           <th>描述</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <td>show.bs.collapse</td>
+           <td>当<code>show</code>方法被调用之后立即触发此事件。</td>
+         </tr>
+         <tr>
+           <td>shown.bs.collapse</td>
+           <td>当可折叠页面元素显示出来之后（同时CSS过渡效果也已执行完毕），此事件被触发。</td>
+         </tr>
+         <tr>
+           <td>hide.bs.collapse</td>
+           <td>
+            当<code>hide</code>方法被调用之后，此事件被立即触发。
+           </td>
+         </tr>
+         <tr>
+           <td>hidden.bs.collapse</td>
+           <td>当可折叠页面元素隐藏之后（同时CSS过渡效果也已执行完毕），此事件被触发。</td>
+         </tr>
+        </tbody>
+      </table>
+    </div><!-- /.table-responsive -->
+<div class="highlight">
+<pre><code class="language-js">$(<span class="string">'#myCollapsible'</span>).on(<span class="string">'hidden.bs.collapse'</span>, <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+  <span class="comment">// do something…</span>
+})</code></pre>
+
+</div>
+  </div>

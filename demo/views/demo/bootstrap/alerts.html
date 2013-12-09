@@ -1,0 +1,93 @@
+  <!-- Alerts
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="alerts">警告框</h1>
+    </div>
+    <p class="lead">为典型的用户动作提供少数可用且灵活的反馈消息。
+      你还可以使用<a href="#/tabs/?path=views/demo/directives/alerts.html&title=警告框">Directive UI组件-警告框</a>让它有交互性。
+    </p>
+
+    <h2 id="alerts-examples">案例</h2>
+    <p>为了得到基本的警告信息，把任何文本和可选的关闭按钮放入<code>.alert</code>和四种有意义的类中（例如，<code>.alert-success</code>）。</p>
+
+    <div class="bs-callout bs-callout-info">
+      <h4>没有默认类</h4>
+      <p>警告框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种内容类。从成功，消息，警告或危险中任选其一。</p>
+    </div>
+
+    <div class="bs-example">
+      <div class="alert alert-success">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-info">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;alert alert-success&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger&quot;&gt;...&lt;/div&gt;</code></pre>
+
+</div>
+
+    <h2 id="alerts-dismissable">可关闭的警告框</h2>
+    <p>可以用一个可选的<code>.alert-dismissable</code>和关闭按钮。</p>
+    <div class="bs-example">
+      <div class="alert alert-warning alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;alert alert-warning alert-dismissable&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; Best check yo self, you&#39;re not looking too good.
+&lt;/div&gt;</code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-warning">
+      <h4>确定在所有设备上的正确行为</h4>
+      <p>一定要给<code>data-dismiss="alert"</code>属性用上<code>&lt;button&gt;</code>。</p>
+    </div>
+
+    <h2 id="alerts-links">警告框中的链接</h2>
+    <p>用<code>.alert-link</code>工具类，可以快速提供在任何警告框中相符的颜色。</p>
+    <div class="bs-example">
+      <div class="alert alert-success">
+        <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+      </div>
+      <div class="alert alert-info">
+        <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> Best check yo self, you're <a href="#" class="alert-link">not looking too good</a>.
+      </div>
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+      </div>
+    </div>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;alert alert-success&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;...&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+  </div>
